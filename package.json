@@ -1,0 +1,95 @@
+{
+  "name": "bitcore-node-DYN",
+  "description": "Full node with extended capabilities using Bitcore and DYN",
+  "version": "3.1.2",
+  "main": "./index.js",
+  "repository": "git://github.com/duality-solutions/bitcore-node-DYN.git",
+  "homepage": "https://bitcore.cc",
+  "bugs": {
+    "url": "https://github.com/duality-solutions/bitcore-node-DYN/issues"
+  },
+  "contributors": [
+    {
+      "name": "Christopher Jeffrey"
+    },
+    {
+      "name": "Braydon Fuller",
+      "email": "braydon@bitpay.com"
+    },
+    {
+      "name": "Chris Kleeschulte",
+      "email": "chrisk@bitpay.com"
+    },
+    {
+      "name": "Patrick Nagurny",
+      "email": "patrick@bitpay.com"
+    },
+    {
+      "name": "Jack Grigg",
+      "email": "jack@z.cash"
+    },
+    {
+      "name": "Larry Ludlow",
+      "email": "larry@myhush.org"
+    },
+    {
+      "name": "TheTrunk",
+      "email": "tessjonesie@gmail.com"
+    },
+    {
+      "name": "wkibbler",
+      "email": "william.kibbler@protonmail.com"
+    }
+  ],
+  "bin": {
+    "bitcore-node": "./bin/bitcore-node"
+  },
+  "scripts": {
+    "test": "mocha -R spec --recursive",
+    "regtest": "./scripts/regtest",
+    "jshint": "jshint --reporter=node_modules/jshint-stylish ./lib",
+    "coverage": "istanbul cover _mocha -- --recursive",
+    "coveralls": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- --recursive -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+  },
+  "tags": [
+    "DYN",
+    "bitcored"
+  ],
+  "dependencies": {
+    "async": "^1.3.0",
+    "bitcoind-rpc": "^0.6.0",
+    "bitcore-lib-DYN": "git://github.com/duality-solutions/bitcore-lib-DYN#master",
+    "body-parser": "^1.13.3",
+    "colors": "^1.1.2",
+    "commander": "^2.8.1",
+    "errno": "^0.1.4",
+    "express": "^4.13.3",
+    "liftoff": "^2.2.0",
+    "lru-cache": "^4.0.1",
+    "mkdirp": "0.5.0",
+    "npm": "^2.14.1",
+    "path-is-absolute": "^1.0.0",
+    "semver": "^5.0.1",
+    "socket.io": "^1.4.5",
+    "socket.io-client": "^1.4.5",
+    "zmq": "^2.14.0"
+  },
+  "optionalDependencies": {
+    "bufferutil": "~1.2.1",
+    "utf-8-validate": "~1.2.1"
+  },
+  "devDependencies": {
+    "benchmark": "1.0.0",
+    "bitcore-p2p": "^1.1.0",
+    "chai": "^3.5.0",
+    "coveralls": "^2.11.9",
+    "istanbul": "^0.4.3",
+    "jshint": "^2.9.2",
+    "jshint-stylish": "^2.1.0",
+    "mocha": "^2.4.5",
+    "proxyquire": "^1.3.1",
+    "rimraf": "^2.4.2",
+    "sinon": "^1.15.4"
+  },
+  "license": "MIT"
+}
