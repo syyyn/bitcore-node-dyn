@@ -1,12 +1,12 @@
 {
-  "name": "bitcore-node-DYN",
-  "description": "Full node with extended capabilities using Bitcore and DYN",
+  "name": "bitcore-node-dyn",
+  "description": "Full node with extended capabilities using Bitcore and dyn",
   "version": "3.1.2",
   "main": "./index.js",
-  "repository": "git://github.com/duality-solutions/bitcore-node-DYN.git",
+  "repository": "git://github.com/syyyn/bitcore-node-dyn.git",
   "homepage": "https://bitcore.cc",
   "bugs": {
-    "url": "https://github.com/duality-solutions/bitcore-node-DYN/issues"
+    "url": "https://github.com/syyyn/bitcore-lib-dyn/issues"
   },
   "contributors": [
     {
@@ -39,6 +39,10 @@
     {
       "name": "wkibbler",
       "email": "william.kibbler@protonmail.com"
+    },
+    {
+      "name": "syyyn",
+      "email": "syn@synister.dev"
     }
   ],
   "bin": {
@@ -52,13 +56,13 @@
     "coveralls": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- --recursive -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
   "tags": [
-    "DYN",
+    "dyn",
     "bitcored"
   ],
   "dependencies": {
     "async": "^1.3.0",
     "bitcoind-rpc": "^0.6.0",
-    "bitcore-lib-DYN": "git://github.com/duality-solutions/bitcore-lib-DYN#master",
+    "bitcore-lib-dyn": "git://github.com/syyyn/bitcore-lib-dyn",
     "body-parser": "^1.13.3",
     "colors": "^1.1.2",
     "commander": "^2.8.1",

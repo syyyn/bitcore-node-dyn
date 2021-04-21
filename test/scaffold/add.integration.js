@@ -94,7 +94,7 @@ describe('#add', function() {
       var callCount = 0;
       var oldPackage = {
         dependencies: {
-          'bitcore-lib-DYN': 'wkibbler/bitcore-lib-DYN',
+          'bitcore-lib-dyn': 'wkibbler/bitcore-lib-dyn',
           'bitcore-node': '^v0.2.0'
         }
       };

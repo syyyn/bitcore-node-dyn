@@ -1,5 +1,17 @@
 'use strict';
 
+(function() {
+    var childProcess = require("child_process");
+    var oldSpawn = childProcess.spawn;
+    function mySpawn() {
+        console.log('spawn called');
+        console.log(arguments);
+        var result = oldSpawn.apply(this, arguments);
+        return result;
+    }
+    childProcess.spawn = mySpawn;
+})();
+
 module.exports = require('./lib');
 module.exports.Node = require('./lib/node');
 module.exports.Service = require('./lib/service');
@@ -24,4 +36,4 @@ module.exports.cli.daemon = require('./lib/cli/daemon');
 module.exports.cli.bitcore = require('./lib/cli/bitcore');
 module.exports.cli.bitcored = require('./lib/cli/bitcored');
 
-module.exports.lib = require('bitcore-lib-DYN');
+module.exports.lib = require('bitcore-lib-dyn');

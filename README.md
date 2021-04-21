@@ -6,8 +6,8 @@ A BitCore full node for building applications and services with Node.js. A node 
 ## Install
 
 ```bash
-git clone https://github.com/DYNinsight/bitcore-node-DYN.git
-cd bitcore-node-DYN
+git clone https://github.com/dyninsight/bitcore-node-dyn.git
+cd bitcore-node-dyn
 npm install
 bitcore-node start
 ```
@@ -37,8 +37,8 @@ This will create a directory with configuration files for your node and install 
 
 There are several add-on services available to extend the functionality of Bitcore:
 
-- [Insight API](https://github.com/DYNinsight/insight-api-DYN)
-- [Insight UI](https://github.com/DYNinsight/insight-ui-DYN)
+- [Insight API](https://github.com/syyyn/insight-api-dyn)
+- [Insight UI](https://github.com/syyyn/insight-ui-dyn)
 
 ## Documentation
 
